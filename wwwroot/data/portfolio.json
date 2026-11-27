@@ -1,0 +1,218 @@
+{
+  "profile": {
+    "name": "Neno Nenov",
+    "title": "Full-Stack .NET Developer",
+    "tagline": "I build full-stack web applications: backend systems and REST APIs with C# and .NET, SQL Server databases and responsive frontends.",
+    "about": [
+      "I'm a full-stack .NET developer with 2 years of commercial experience building and maintaining business web applications with ASP.NET, .NET Core and Microsoft SQL Server.",
+      "On the backend I build REST APIs, services and business logic in C#, design databases and write SQL queries and stored procedures. On the frontend I create responsive pages and UI improvements with JavaScript, HTML, CSS and Bootstrap.",
+      "I enjoy improving existing systems as much as building new ones: debugging, optimizing and keeping enterprise applications reliable.",
+      "My background also includes system and embedded programming in C on Linux, and a Master's degree in Software Engineering and Artificial Intelligence. Alongside development I teach programming, which keeps my fundamentals sharp and my explanations clear."
+    ],
+    "location": "Karlovo, Bulgaria · Available for remote work",
+    "email": "nenovneno214@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/neno-nenov-0a6577448/",
+    "gitHub": "https://github.com/NenoNenov",
+    "openToWork": true,
+    "openToWorkText": "Open to contract and freelance projects"
+  },
+  "technologies": [
+    {
+      "name": "C#",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+    },
+    {
+      "name": ".NET",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"
+    },
+    {
+      "name": "ASP.NET Core",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+    },
+    {
+      "name": "Blazor",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg"
+    },
+    {
+      "name": "SQL Server",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "HTML5",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    },
+    {
+      "name": "CSS3",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+    },
+    {
+      "name": "WordPress",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg"
+    },
+    {
+      "name": "Azure",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+    },
+    {
+      "name": "Git",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+    },
+    {
+      "name": "Visual Studio",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
+    },
+    {
+      "name": "Linux",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+    },
+    {
+      "name": "C++",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend",
+      "items": [
+        "C#",
+        ".NET Core",
+        "ASP.NET MVC",
+        "ASP.NET Framework",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Databases",
+      "items": [
+        "Microsoft SQL Server",
+        "T-SQL",
+        "Stored Procedures"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "items": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Blazor",
+        "WordPress"
+      ]
+    },
+    {
+      "name": "Tools & other",
+      "items": [
+        "Git",
+        "GitHub",
+        "Visual Studio",
+        "Microsoft Azure",
+        "Linux",
+        "C / C++"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Programming and IT Teacher",
+      "company": "СУ „Христо Проданов“",
+      "period": "Sep 2026 – Present",
+      "location": "Karlovo, Bulgaria",
+      "highlights": [
+        "Teaching programming (C#) and Information Technology to high school students.",
+        "Built and maintain the school's official website (WordPress).",
+        "Create interactive web-based lessons with HTML, CSS and JavaScript."
+      ]
+    },
+    {
+      "role": "Junior .NET Developer",
+      "company": "Bisoft",
+      "period": "Aug 2024 – Jul 2026",
+      "location": "Bulgaria",
+      "highlights": [
+        "Developed and maintained business web applications using ASP.NET Framework and .NET Core.",
+        "Built backend functionality, REST APIs, services and business logic in C#.",
+        "Designed Microsoft SQL Server databases: tables, relationships, normalized schemas, queries and stored procedures.",
+        "Implemented frontend pages and UI improvements with JavaScript and Bootstrap.",
+        "Debugged, optimized and maintained existing enterprise systems."
+      ]
+    },
+    {
+      "role": ".NET Backend Developer Intern",
+      "company": "Zingasoft",
+      "period": "Nov 2021 – Feb 2022",
+      "location": "Plovdiv, Bulgaria",
+      "highlights": [
+        "Completed a backend development internship using C# and .NET.",
+        "Worked with Microsoft technologies with a focus on Microsoft Azure."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "School Website",
+      "description": "Redesigned and launched a high school's official website on WordPress: modern responsive design, restructured content and web accessibility compliance. I maintain the site and publish updates.",
+      "tags": [
+        "WordPress",
+        "HTML",
+        "CSS",
+        "Accessibility"
+      ],
+      "liveUrl": "https://sou-prodanov.com",
+      "status": "Live"
+    },
+    {
+      "title": "Developer Portfolio",
+      "description": "This website. A Blazor WebAssembly app written in C#, with all content loaded from a single JSON file and automatic deployment to GitHub Pages via GitHub Actions.",
+      "tags": [
+        "C#",
+        "Blazor WebAssembly",
+        "GitHub Actions"
+      ],
+      "repoUrl": "https://github.com/NenoNenov/NenoNenov.github.io",
+      "status": "Live"
+    },
+    {
+      "title": "Interactive Lessons",
+      "description": "Interactive web-based lessons for programming and IT classes: quizzes, step-by-step code examples and exercises for students.",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "status": "In progress"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Embedded Systems Programming (C / Linux) – Star Camp 17",
+      "issuer": "MM Solutions",
+      "date": "Aug 2023"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's, Software Engineering and Artificial Intelligence",
+      "school": "University of Plovdiv „Paisii Hilendarski“",
+      "period": "2025 – 2026"
+    },
+    {
+      "degree": "Bachelor's, Software Technologies and Design",
+      "school": "University of Plovdiv „Paisii Hilendarski“",
+      "period": "2021 – 2025"
+    },
+    {
+      "degree": "High School Diploma, System Programming",
+      "school": "PG „General Vladimir Zaimov“, Sopot",
+      "period": "2016 – 2021"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+@page "/"
+@inject HttpClient Http
+
+<PageTitle>Neno Nenov | C# / .NET Developer</PageTitle>
+
+@if (data is null)
+{
+    <div class="loading" role="status">Loading…</div>
+}
+else
+{
+    var p = data.Profile;
+
+    <section class="hero">
+        <div class="container hero-inner fade-up">
+            <p class="mono accent">Hello, I'm</p>
+            <h1>@p.Name</h1>
+            <h2 class="hero-title">@p.Title</h2>
+            <p class="hero-tagline">@p.Tagline</p>
+            @if (p.OpenToWork)
+            {
+                <p class="badge"><span class="dot" aria-hidden="true"></span>@p.OpenToWorkText</p>
+            }
+            <div class="hero-actions">
+                <a class="btn primary" href="#projects">View my work</a>
+                <a class="btn" href="#contact">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech" aria-label="Technologies">
+        <p class="tech-label mono">TECHNOLOGIES</p>
+        <div class="marquee">
+            <ul class="marquee-track">
+                @foreach (var copy in new[] { false, true })
+                {
+                    @foreach (var t in data.Technologies)
+                    {
+                        <li aria-hidden="@(copy ? "true" : "false")">
+                            <img src="@t.Icon" alt="" width="56" height="56" loading="lazy" />
+                            <span>@t.Name</span>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="section container">
+        <h2 class="section-title"><span class="mono accent">01.</span> About me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                @foreach (var line in p.About)
+                {
+                    <p>@line</p>
+                }
+            </div>
+            <div class="skills">
+                @foreach (var group in data.Skills)
+                {
+                    <div class="skill-group">
+                        <h3>@group.Name</h3>
+                        <ul class="tags">
+                            @foreach (var s in group.Items)
+                            {
+                                <li>@s</li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section container">
+        <h2 class="section-title"><span class="mono accent">02.</span> Projects</h2>
+        <div class="project-grid">
+            @foreach (var pr in data.Projects)
+            {
+                <article class="card project">
+                    @if (!string.IsNullOrWhiteSpace(pr.Image))
+                    {
+                        <img src="@pr.Image" alt="Screenshot of @pr.Title" loading="lazy" />
+                    }
+                    <div class="card-head">
+                        <h3>@pr.Title</h3>
+                        @if (!string.IsNullOrWhiteSpace(pr.Status))
+                        {
+                            <span class="status">@pr.Status</span>
+                        }
+                    </div>
+                    <p>@pr.Description</p>
+                    <ul class="tags">
+                        @foreach (var t in pr.Tags)
+                        {
+                            <li>@t</li>
+                        }
+                    </ul>
+                    <div class="project-links">
+                        @if (!string.IsNullOrWhiteSpace(pr.LiveUrl))
+                        {
+                            <a href="@pr.LiveUrl" target="_blank" rel="noopener">Live site ↗</a>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(pr.RepoUrl))
+                        {
+                            <a href="@pr.RepoUrl" target="_blank" rel="noopener">Source code ↗</a>
+                        }
+                    </div>
+                </article>
+            }
+        </div>
+    </section>
+
+    <section id="certificates" class="section container">
+        <h2 class="section-title"><span class="mono accent">03.</span> Certificates</h2>
+        <div class="edu-grid">
+            @foreach (var c in data.Certificates)
+            {
+                <div class="card">
+                    <h4>@c.Title</h4>
+                    <p class="muted">@c.Issuer</p>
+                    <p class="mono muted small">@c.Date</p>
+                    @if (!string.IsNullOrWhiteSpace(c.Url))
+                    {
+                        <a href="@c.Url" target="_blank" rel="noopener">View certificate ↗</a>
+                    }
+                </div>
+            }
+        </div>
+    </section>
+
+    <section id="contact" class="section container contact">
+        <h2 class="section-title"><span class="mono accent">04.</span> Contact</h2>
+        <p class="contact-lead">Have a project in mind or an opportunity to discuss? I'd be glad to hear from you.</p>
+        <div class="hero-actions center">
+            <a class="btn primary" href="mailto:@p.Email">@p.Email</a>
+            <a class="btn" href="@p.LinkedIn" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn" href="@p.GitHub" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="muted small">@p.Location</p>
+    </section>
+}
+
+@code {
+    private PortfolioData? data;
+
+    protected override async Task OnInitializedAsync()
+    {
+        data = await Http.GetFromJsonAsync<PortfolioData>("data/portfolio.json");
+    }
+}
